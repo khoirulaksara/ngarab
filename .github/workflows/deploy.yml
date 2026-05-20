@@ -1,0 +1,47 @@
+name: Deploy Plugin to WordPress.org
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.3'
+
+      - name: Validate plugin version
+        run: |
+          PHP_VERSION=$(grep -i "Version:" ngarab.php | head -1 | sed 's/.*Version:[[:space:]]*//')
+          README_VERSION=$(grep -i "Stable tag:" readme.txt | head -1 | sed 's/.*Stable tag:[[:space:]]*//')
+
+          echo "Plugin version: $PHP_VERSION"
+          echo "Stable tag: $README_VERSION"
+
+          if [ "$PHP_VERSION" != "$README_VERSION" ]; then
+            echo "Version mismatch detected."
+            exit 1
+          fi
+
+      - name: Deploy to WordPress.org
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        env:
+          SVN_USERNAME: ${{ secrets.WP_ORG_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.WP_ORG_PASSWORD }}
+
+          SLUG: ngarab
+
+          BUILD_DIR: .
+          ASSETS_DIR: assets_wp_org
+
+          IGNORE_FILE: .distignore

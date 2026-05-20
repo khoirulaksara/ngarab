@@ -1,0 +1,38 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Composer
+vendor/
+
+# Env
+.env
+.env.local
+
+# Build / Cache
+dist/
+build/
+.cache/
+
+# Logs
+*.log
+
+# WP-CLI config
+wp-cli.local.yml
+
+# Testing
+phpunit.xml
+.phpunit.result.cache
+
+# GitHub local
+.github/*.local.yml

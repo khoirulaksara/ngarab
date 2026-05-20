@@ -1,8 +1,9 @@
 === (ng)Arab ===
 Contributors: khoirulaksara
+Donate link: https://paypal.me/gonzsky
 Tags: arabic, font, quran, typography, lpmq
 Requires at least: 5.0
-Tested up to: 6.9
+Tested up to: 7.0
 Stable tag: 3.1.1
 Requires PHP: 7.2
 License: GPLv2 or later
@@ -40,37 +41,46 @@ Navigate to **Settings -> (ng)Arab** in your WordPress dashboard to find all cus
 
 == Screenshots ==
 
-1. Arabic text displayed using the LPMQ font.
+1. Arabic text displayed.
 2. The settings page for customizing typography and selecting fonts.
 3. Shortcode helper button in the editor toolbar.
+4. Block editor interface.
+
+== Upgrade Notice ==
+= 3.1.1 =
+Tested up to: 7.0
+
+= 3.1.0 =
+Arabic Number Conversion & Enhanced RTL Editor. This update adds support for converting Western digits to Arabic numerals and improves the right-to-left editing experience.
+
+= 3.0.0 =
+Initial Official Release. This version includes full Gutenberg support, premium typography, and repository-compliant security updates.
 
 == Changelog ==
 
-= 3.1.1 =
-* **Compliance Update**: Added full internationalization (i18n) support.
-* **Security**: Enhanced output sanitization and script organization.
-* **Compatibility**: Updated for WordPress 6.4.
-
 = 3.1.0 =
-* **Added Gutenberg Block** support for modern editing.
-* **Added Transliteration & Translation** support.
-* **Added Color Picker** for Arabic text customization.
-* **Added Copy to Clipboard** feature.
-* **Expanded Font Library** (Amiri, Lateef, Noto Nastaliq Urdu, etc.).
-* Added professional settings page with **Live Font Preview**.
-* Organized internal structure (Centralized assets/ folder).
+* **Arabic Number Conversion**: Added feature to convert Western digits (0-9) to Arabic numerals (٠-٩).
+* **Text Alignment**: Added option for Left, Center, and Right alignment.
+* **Global Settings**: Added a toggle for global number conversion control.
+* **Shortcode & Block Support**: New `convert_num` and `align` attributes.
+* **Enhanced RTL Editor**: Improved right-to-left support and font styling in the editor modals.
+* **Font Update**: Optimized font stacks and set Scheherazade New as the default font.
 
 = 3.0.0 =
-* Initial professional release.
-* Integrated LPMQ Isep Misbah font in WOFF2 format.
-* Added support for multi-line and paragraph-style Arabic text.
-* Standardized code and documentation for WordPress.org repository.
+* **Initial Official Release**.
+* **Gutenberg Ready**: Full support for the Block Editor with a native (ng)Arab block.
+* **Classic Editor Support**: Integrated TinyMCE shortcode generator.
+* **Premium Typography**: 6+ professional Arabic fonts including LPMQ, Amiri, and Lateef.
+* **Advanced Features**: Live transliteration, translation, and color customization.
+* **User Experience**: One-click Copy to Clipboard functionality and live font previews.
+* **Performance**: Optimized WOFF2 font loading and clean, modular script architecture.
+* **Compliance**: 100% WordPress.org guideline compliant code, security, and sanitization.
 
-== Privacy Policy ==
+= 2.0.0 (Internal Release - 2015) =
+* **Performance Optimization:** Migrated font assets from .ttf to .woff2 format for significantly faster loading times and smaller file sizes.
+* Improved cross-browser compatibility for Arabic script rendering.
 
-This plugin uses **Google Fonts** to provide high-quality Arabic typography. No user data is sent to external servers by this plugin itself, but loading fonts from Google may involve standard browser requests to Google's CDN.
-
-== Upgrade Notice ==
-
-= 3.1.1 =
-Guideline compliance and security updates. Recommended for all users.
+= 1.0.0 (Private Release - 2014) =
+* Initial private release for internal projects and specific clients.
+* Core features for converting Latin text to (ng)Arab characters.
+* Basic selection of calligraphy-style fonts.
