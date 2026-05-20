@@ -3,7 +3,7 @@
  * Plugin Name: (ng)Arab
  * Plugin URI: https://github.com/khoirulaksara/ngarab
  * Description: Display Quranic verses, Hadiths, and Arabic text in WordPress with beautiful typography and professional Arabic fonts.
- * Version: 3.1.1
+ * Version: 3.1.2
  * Author: Khoirul Aksara
  * Author URI: https://log.serat.us
  * License: GPL2

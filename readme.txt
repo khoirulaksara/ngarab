@@ -4,7 +4,7 @@ Donate link: https://paypal.me/gonzsky
 Tags: arabic, font, quran, typography, lpmq
 Requires at least: 5.0
 Tested up to: 7.0
-Stable tag: 3.1.1
+Stable tag: 3.1.2
 Requires PHP: 7.2
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -27,7 +27,7 @@ The plugin utilizes professional Arabic fonts in lightweight WOFF2 format, ensur
 
 == Installation ==
 
-1. Upload the `arabic` folder to the `/wp-content/plugins/` directory.
+1. Upload the `ngarab` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress.
 3. Use the `[ngarab]` shortcode or the new **editor button** to insert your Arabic text.
 
@@ -47,6 +47,9 @@ Navigate to **Settings -> (ng)Arab** in your WordPress dashboard to find all cus
 4. Block editor interface.
 
 == Upgrade Notice ==
+= 3.1.2 =
+Tested up to: 7.0 (Minor updates).
+
 = 3.1.1 =
 Tested up to: 7.0
 
